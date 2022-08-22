@@ -16,7 +16,8 @@
 .content {
   display: flex;
   div {
-    margin-left: 10%;
+    margin-left: 50px;
+    transform: matrix(-1, 0.05, 0.05, 1, 0, 0);
     img {
       transform: none;
     }
