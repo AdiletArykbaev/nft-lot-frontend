@@ -1,7 +1,5 @@
 .wrapper {
   box-sizing: border-box;
-  display: flex;
-  position: absolute;
   width: 100%;
   height: 165.15px;
 
@@ -19,8 +17,8 @@
   display: flex;
   div {
     margin-left: 10%;
-    img{
-        transform: none;
+    img {
+      transform: none;
     }
   }
 }
