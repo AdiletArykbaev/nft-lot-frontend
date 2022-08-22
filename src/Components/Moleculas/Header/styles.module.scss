@@ -1,16 +1,14 @@
-.navigation {
-  display: flex;
-  width: 420px;
-  justify-content: space-between;
-  padding: 2% 0;
-  a {
-  }
-}
 .wrapper {
+  position: fixed;
+  width: 1440px;
+  z-index: 1000;
+  background-color: #000000;
+  height: 58px;
+  padding: 2% 0;
+}
+.content {
   display: flex;
-  padding: 3% 0;
   justify-content: space-between;
-  height: 118px;
 }
 .logoBlock {
   display: flex;
@@ -85,5 +83,13 @@
     position: absolute;
     background-image: url("../../../assets/icons/arrow.svg");
     margin-left: 5px;
+  }
+}
+.navigation {
+  display: flex;
+  width: 420px;
+  justify-content: space-between;
+  padding: 2% 0;
+  a {
   }
 }

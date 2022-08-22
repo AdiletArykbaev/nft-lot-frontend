@@ -7,65 +7,67 @@ import personIcon from "../../../assets/icons/user.svg";
 
 const Header = () => {
   return (
-    <div className="wrapper">
-      <header className={styles.wrapper}>
-        <div className={styles.logoBlock}>
-          <div>
-            <img src={logo} alt="logo" />
+    <header className={styles.wrapper}>
+      <div className="wrapper">
+        <div className={styles.content}>
+          <div className={styles.logoBlock}>
+            <div>
+              <img src={logo} alt="logo" />
+            </div>
+            <h1>
+              MARMOSET <br /> TOKEN
+            </h1>
           </div>
-          <h1>
-            MARMOSET <br /> TOKEN
-          </h1>
+          <nav className={styles.navigation}>
+            <Link
+              to="/"
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+            >
+              Home
+            </Link>
+            <Link
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+              to="/us"
+            >
+              About us
+            </Link>
+            <Link
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+              to="/lottert"
+            >
+              Lottery
+            </Link>
+            <Link
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+              to="/shop"
+            >
+              Shop
+            </Link>
+            <Link
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+              to="/faq"
+            >
+              FAQ
+            </Link>
+          </nav>
+          <div className={styles.btns}>
+            <img src={personIcon} alt="image icon" />
+            <WalletBtn balance={"0.000"} />
+            <li className={styles.changeLang}>RU</li>
+          </div>
         </div>
-        <nav className={styles.navigation}>
-          <Link
-            to="/"
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-          >
-            Home
-          </Link>
-          <Link
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-            to="/us"
-          >
-            About us
-          </Link>
-          <Link
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-            to="/lottert"
-          >
-            Lottery
-          </Link>
-          <Link
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-            to="/shop"
-          >
-            Shop
-          </Link>
-          <Link
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-            to="/faq"
-          >
-            FAQ
-          </Link>
-        </nav>
-        <div className={styles.btns}>
-          <img src={personIcon} alt="image icon" />
-          <WalletBtn balance={"0.000"} />
-          <li className={styles.changeLang}>RU</li>
-        </div>
-      </header>
-    </div>
+      </div>
+    </header>
   );
 };
 
