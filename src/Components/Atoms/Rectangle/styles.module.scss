@@ -1,12 +1,13 @@
 .wrapper {
-  background: url(frosted-glass-texture-as-background-frosted-glass-texture-as-background-interior-design-decoration-111091129.jpg),
-    linear-gradient(
-      253.09deg,
-      rgba(247, 127, 189, 0.25) -7.53%,
-      rgba(255, 23, 145, 0.25) 97.04%
-    );
+  background: linear-gradient(
+    253.09deg,
+    rgba(247, 127, 189, 0.25) -7.53%,
+    rgba(255, 23, 145, 0.25) 97.04%
+  );
   backdrop-filter: blur(50px);
   /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 30px;
+  width: 216px;
+  height: 206px;
 }
