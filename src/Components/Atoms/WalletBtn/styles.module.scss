@@ -1,0 +1,39 @@
+.wrapper {
+  width: 233px;
+  height: 40px;
+
+  /* Gray/20 */
+  margin-top: 3%;
+  margin-left: 5%;
+  display: flex;
+  background: #2c2d3a;
+  border-radius: 100px;
+  padding: 0 5%;
+  /* Inside auto layout */
+}
+.text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 2%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+}
+.firstpart {
+  display: flex;
+  margin-top: -5%;
+  width: 60%;
+  padding: 2%;
+}
+.secondpart {
+  background: #3b3c4e;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}

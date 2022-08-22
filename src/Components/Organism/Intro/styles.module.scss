@@ -1,0 +1,24 @@
+.title {
+  font-family: "Evolventa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 133%;
+  /* or 41px */
+
+  background: linear-gradient(92.75deg, #f77fbd 0%, #ff1791 101.51%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+p {
+  color: #ffff;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.telega {
+  margin-top: 5%;
+}

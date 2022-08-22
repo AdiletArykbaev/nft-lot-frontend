@@ -1,0 +1,89 @@
+.navigation {
+  display: flex;
+  width: 420px;
+  justify-content: space-between;
+  padding: 2% 0;
+  a {
+  }
+}
+.wrapper {
+  display: flex;
+  padding: 3% 0;
+  justify-content: space-between;
+  height: 118px;
+}
+.logoBlock {
+  display: flex;
+  div {
+    img {
+      width: 59px;
+      height: 58px;
+    }
+  }
+  h1 {
+    margin-left: 10px;
+    font-family: "Univermag";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 90%;
+    /* or 19px */
+
+    color: #ffffff;
+  }
+}
+.link {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 90%;
+  /* or 14px */
+  text-decoration: none;
+  color: #ffffff;
+}
+.active {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 90%;
+  /* or 14px */
+  text-decoration: none;
+  color: linear-gradient(92.75deg, #f77fbd 0%, #ff1791 101.51%);
+}
+.btns {
+  display: flex;
+
+  img {
+    width: 40px;
+    height: 40px;
+    margin-top: 2%;
+  }
+}
+.changeLang {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 90%;
+  /* or 14px */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 6%;
+  list-style-type: none;
+  &::after {
+    content: "";
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    background-image: url("../../../assets/icons/arrow.svg");
+    margin-left: 5px;
+  }
+}
