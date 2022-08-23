@@ -1,0 +1,52 @@
+.wrapper {
+  margin-top: 160px;
+  display: flex;
+  padding: 0 40px;
+}
+.title {
+  font-family: "Evolventa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 133%;
+  color: #f77fbd;
+}
+.text {
+  font-family: "Evolventa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 144%;
+  /* or 26px */
+
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  color: #ffffff;
+}
+.item {
+  padding: 60px 0;
+  list-style: none;
+  font-family: "Evolventa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 144%;
+  /* identical to box height, or 26px */
+
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  color: #ffffff;
+  margin-left: 160px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    background-image: url("../../../assets/icons/before.svg");
+    margin-left: -100px;
+    margin-top: -20px;
+  }
+}
+.fisrtPart {
+  padding: 140px 0;
+}
