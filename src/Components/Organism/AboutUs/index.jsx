@@ -2,22 +2,25 @@ import React from "react";
 import logo from "../../../assets/icons/logo.png";
 import styles from "./styles.module.scss";
 import Rectangle from "../../Atoms/Rectangle";
+import msg from "../../../assets/icons/msg.svg";
 
 const AboutUs = () => {
   const infoBlock = [
     {
-      img: "",
-      text: "",
+      img: msg,
+      text: "быстрее и проще раскрепощаться в отношениях",
     },
-    {},
-    {},
-    {},
+    { img: msg, text: "стать живее и артистичнее" },
+    { img: msg, text: "научиться легкости  и переключаемости" },
+    { img: msg, text: "не упускать подходящие шансы" },
   ];
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
         <div className={styles.intro}>
-          <img src={logo} alt="" />
+          <div>
+            <img src={logo} alt="" />
+          </div>
           <h1 className={styles.title}>О МАРМОЗЕТКЕ</h1>
         </div>
         <div className={styles.textTable}>
@@ -44,8 +47,10 @@ const AboutUs = () => {
           <br />
           качестве дополнительного домашнего талисмана, если хочет:
         </h4>
-        <div>
-          <Rectangle />
+        <div className={styles.walletsBlock}>
+          {infoBlock.map((item) => (
+            <Rectangle img={item.img} text={item.text} />
+          ))}
         </div>
       </div>
     </div>

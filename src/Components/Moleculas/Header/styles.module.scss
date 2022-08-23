@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: #000000;
+  background-color: hsl(0, 0%, 0%);
   height: 58px;
   padding: 10px 0;
 }
@@ -87,9 +87,7 @@
 }
 .navigation {
   display: flex;
-  width: 420px;
-  justify-content: space-between;
+  width: 500px;
   padding: 20px 0;
-  a {
-  }
+  justify-content: space-between;
 }
