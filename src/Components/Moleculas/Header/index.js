@@ -49,7 +49,15 @@ const Header = () => {
               }
               to="/shop"
             >
-              Shop
+              Shop MMT
+            </Link>
+            <Link
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+              to="/paper"
+            >
+              White Paper
             </Link>
             <Link
               className={({ isActive }) =>
