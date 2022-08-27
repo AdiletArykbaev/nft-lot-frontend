@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 const AboutToken = () => {
   return (
-    <div className="wrapper">
+    <div className={styles.wrapperBox}>
       <div className={styles.wrapper}>
         <div className={styles.fisrtPart}>
           <h1 className={styles.title}>
@@ -18,12 +18,10 @@ const AboutToken = () => {
           </p>
         </div>
         <div className={styles.secondPart}>
-          <ul className={styles.list}>
-            <li className={styles.item}>АУДИТ</li>
-            <li className={styles.item}>0% НАЛОГА НА ПРОДАЖУ/ПОКУПКУ</li>
-            <li className={styles.item}>НЕТ КОНТРОЛЯ КОНТРАКТА</li>
-            <li className={styles.item}> НЕТ РАННЕЙ ПРОДАЖИ ТОКЕНОВ</li>
-          </ul>
+            <p className={styles.item}>АУДИТ</p>
+            <p className={styles.item}>0% НАЛОГА НА ПРОДАЖУ/ПОКУПКУ</p>
+            <p className={styles.item}>НЕТ КОНТРОЛЯ КОНТРАКТА</p>
+            <p className={styles.item}> НЕТ РАННЕЙ ПРОДАЖИ ТОКЕНОВ</p>
         </div>
       </div>
     </div>

@@ -18,9 +18,7 @@ const AboutUs = () => {
     <div className={styles.wrapper}>
       <div className={styles.content}>
         <div className={styles.intro}>
-          <div>
             <img src={logo} alt="" />
-          </div>
           <h1 className={styles.title}>О МАРМОЗЕТКЕ</h1>
         </div>
         <div className={styles.textTable}>
@@ -29,7 +27,7 @@ const AboutUs = () => {
             который сочетает в себе все их лучшие функции для создания
             совершенно нового Мем токена в криптопространстве.
           </p>
-          <p>
+          <p className={styles.p}>
             Все владельцы Мармозетки смогут принимать еженедельное участие в
             первой и уникальной в своём роде Лотерее, с децентрализованным
             алгоритмом и бесконечно растущим ДЖЕКПОТОМ. С такими качествами

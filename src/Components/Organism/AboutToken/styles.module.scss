@@ -1,18 +1,38 @@
 .wrapper {
-  margin-top: 160px;
+  width: 90%;
+  margin: 1% auto 0;
   display: flex;
-  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
 }
+
+.wrapperBox {
+  position: relative;
+
+  &::after {
+    background: #3C3C3C;
+    opacity: 0.2;
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
 .title {
-  font-family: "Evolventa";
+  font-family: "Evolventa", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
   line-height: 133%;
   color: #0eb78c;
 }
+
 .text {
-  font-family: "Evolventa";
+  font-family: "Evolventa", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -23,30 +43,40 @@
 
   color: #ffffff;
 }
+
 .item {
-  padding: 60px 0;
+  padding: 0;
   list-style: none;
-  font-family: "Evolventa";
+  font-family: "Evolventa", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 144%;
-  /* identical to box height, or 26px */
-
   font-feature-settings: "pnum" on, "lnum" on;
-
   color: #ffffff;
-  margin-left: 160px;
+  margin: 0;
+  position: relative;
+
   &::before {
     content: "";
     position: absolute;
     width: 83px;
     height: 83px;
     background-image: url("../../../assets/icons/before.svg");
-    margin-left: -100px;
-    margin-top: -20px;
+    left: -35px;
+    top: 50%;
+    transform: translate(-100%, -50%);
   }
 }
+
 .fisrtPart {
-  padding: 140px 0;
+  width: 48%;
+}
+
+.secondPart {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 110px;
 }

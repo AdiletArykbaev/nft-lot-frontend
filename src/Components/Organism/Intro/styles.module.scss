@@ -1,23 +1,25 @@
 .wrapper {
-  padding: 12% 0;
+  padding: 12% 0 3%;
 }
+
 .title {
-  font-family: "Evolventa";
+  font-family: "Evolventa", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 31px;
   line-height: 133%;
-  /* or 41px */
-
   color: #0eb78c;
 }
+
 p {
   color: #ffff;
 }
+
 .content {
   display: flex;
   justify-content: space-between;
 }
+
 .telega {
   margin-top: 5%;
 }

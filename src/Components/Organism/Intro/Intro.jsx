@@ -4,6 +4,7 @@ import telegram from "../../../assets/icons/telegram.png";
 import timeMonkey from "../../../assets/icons/timeMonkey.png";
 import rezak from "../../../assets/icons/rezak.svg";
 import Info from "../../Moleculas/Info/Info";
+
 const Intro = () => {
   return (
     <div className={styles.wrapper}>
