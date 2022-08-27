@@ -11,6 +11,7 @@
   position: relative;
 
   &::after {
+    z-index: -1;
     background: #3C3C3C;
     opacity: 0.2;
     content: '';
@@ -58,6 +59,7 @@
   position: relative;
 
   &::before {
+    z-index: -1;
     content: "";
     position: absolute;
     width: 83px;
