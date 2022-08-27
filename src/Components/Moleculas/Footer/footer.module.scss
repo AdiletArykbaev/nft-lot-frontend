@@ -1,0 +1,34 @@
+.addressBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  margin: 0 0 30px;
+}
+
+.addressText {
+  font-family: 'Evolventa', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFFFFF;
+}
+
+.box {
+  padding: 1% 0;
+  border-top: 1px solid #0EB78C;
+  box-sizing: border-box;
+}
+
+.text {
+  font-family: 'Evolventa', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #C8C8C8;
+}

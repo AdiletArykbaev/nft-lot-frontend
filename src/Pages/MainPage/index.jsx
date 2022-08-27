@@ -4,6 +4,9 @@ import AboutUs from "../../Components/Organism/AboutUs";
 import Token from "../../Components/Organism/Token";
 import AboutToken from "../../Components/Organism/AboutToken/AboutToken";
 import Nfts from "../../Components/Organism/NFTS";
+import Community from "../../Components/Organism/Community";
+import Faq from "../../Components/Organism/Faq";
+import Join from "../../Components/Organism/Join";
 
 const Main = () => {
     return (
@@ -13,6 +16,9 @@ const Main = () => {
             <Token/>
             <AboutToken/>
             <Nfts/>
+            <Community/>
+            <Faq/>
+            <Join/>
         </div>
     );
 };
