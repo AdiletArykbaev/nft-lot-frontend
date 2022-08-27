@@ -10,7 +10,7 @@ import Join from "../../Components/Organism/Join";
 
 const Main = () => {
     return (
-        <div className="main">
+        <main className="main">
             <Intro/>
             <AboutUs/>
             <Token/>
@@ -19,7 +19,7 @@ const Main = () => {
             <Community/>
             <Faq/>
             <Join/>
-        </div>
+        </main>
     );
 };
 

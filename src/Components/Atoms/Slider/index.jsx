@@ -7,10 +7,7 @@ import "swiper/css/navigation";
 import "./swiperSettings.css";
 import nft1 from "../../../assets/images/nft-1.png";
 
-const Slider = () => {
-
-    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
+const Slider = ({sliderData}) => {
     return (
         <div className="swiper_parent">
             <Swiper
@@ -20,7 +17,7 @@ const Slider = () => {
                 navigation
                 scrollbar={{draggable: true}}
             >
-                {arr.map((el) => (
+                {sliderData && sliderData.map((el) => (
                     <React.Fragment idx={el}>
                         <SwiperSlide>
                             <div className="swiper_box">

@@ -1,0 +1,44 @@
+.head {
+  background: #0EB78C;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.headContent {
+  width: 100%;
+  color: #FFFFFF;
+  box-sizing: border-box;
+
+  span {
+    float: left;
+    padding: 8px 0;
+  }
+}
+
+.winnersButton {
+  float: right;
+  padding: 8px 19px;
+  box-sizing: border-box;
+  background: #3B3C4E;
+  border-radius: 12px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.grey {
+  color: #FFFFFF;
+}
+
+.values {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.winValue {
+  color: #0EB78C;
+  text-align: center;
+}
