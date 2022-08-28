@@ -1,91 +1,34 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Scrollbar, Navigation} from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "./swiperSettings.css";
 import nft1 from "../../../assets/images/nft-1.png";
-import { Navigation } from "swiper";
-import { useSwiper } from "swiper/react";
 
-const Slider = () => {
-  const swiper = useSwiper();
-
-  return (
-    <>
-      <Swiper
-        slidesPerView={5}
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        navigation={true}
-        modules={[Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <div>
-            <img src={nft1} alt="" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <img src={nft1} alt="" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <img src={nft1} alt="" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <img src={nft1} alt="" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <img src={nft1} alt="" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <img src={nft1} alt="" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <div>
-            <img src={nft1} alt="" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <div>
-            <img src={nft1} alt="" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <div>
-            <img src={nft1} alt="" />
-          </div>
-        </SwiperSlide>
-      </Swiper>
-      <div>
-        <button
-          onClick={() => {
-            swiper.slideNext();
-          }}
-          className="swipe_next"
-        >
-          next
-        </button>
-      </div>
-    </>
-  );
+const Slider = ({sliderData}) => {
+    return (
+        <div className="swiper_parent">
+            <Swiper
+                modules={[Navigation, Scrollbar]}
+                spaceBetween={36}
+                slidesPerView={4}
+                navigation
+                scrollbar={{draggable: true}}
+            >
+                {sliderData && sliderData.map((el) => (
+                    <React.Fragment idx={el}>
+                        <SwiperSlide>
+                            <div className="swiper_box">
+                                <img src={nft1} alt=""/>
+                            </div>
+                        </SwiperSlide>
+                    </React.Fragment>
+                ))}
+            </Swiper>
+        </div>
+    );
 };
 
 export default Slider;

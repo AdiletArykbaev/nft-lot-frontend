@@ -1,82 +1,83 @@
-.wrapper {
-  margin-top: 5%;
-}
 .content {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .title {
-  margin-top: 5%;
-  font-family: "Evolventa";
+  margin: 13px 0 65px;
+  font-family: "Evolventa", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 133%;
-  /* or 53px */
-
   text-align: center;
-
   color: #0eb78c;
-
-  background-clip: text;
-  text-fill-color: transparent;
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-items: center;
   justify-content: center;
 }
+
 .textTable {
-  width: 994px;
-
-  padding: 5% 6%;
-
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  padding: 4% 2%;
   background: linear-gradient(
-    253.09deg,
-    rgba(14, 184, 139, 0.25) -7.53%,
-    rgba(15, 184, 141, 0.25) 97.04%
-  ); /* Note: backdrop-filter has minimal browser support */
-  height: 345px;
-
+                  253.09deg,
+                  rgba(14, 184, 139, 0.25) -7.53%,
+                  rgba(15, 184, 141, 0.25) 97.04%
+  );
   border-radius: 30px;
+
   p {
-    margin-top: 5%;
-    font-family: "Poppins";
+    margin: 0;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 144%;
-    /* or 26px */
-
     font-feature-settings: "pnum" on, "lnum" on;
-
     color: #ffffff;
   }
 }
+
+.p {
+  margin: 18px 0 !important;
+}
+
 .text {
-  margin-top: 4%;
-  font-family: "Evolventa";
+  margin: 3% 0;
+  font-family: "Evolventa", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 144%;
-  /* or 29px */
-
   text-align: center;
   font-feature-settings: "pnum" on, "lnum" on;
-
   color: #ffff;
 }
+
 .intro {
-  h1 {
-    margin-left: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    width: 77px;
+    height: 77px;
+    display: block;
+    margin: 0 auto;
   }
 }
+
 .walletsBlock {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  margin-top: 45px;
 }
