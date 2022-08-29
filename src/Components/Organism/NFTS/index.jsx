@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import Slider from "../../Atoms/Slider";
+import rezak from "../../../assets/icons/rezak.png";
 
 const Nfts = () => {
 
@@ -19,6 +20,9 @@ const Nfts = () => {
                 </p>
             </div>
             <Slider sliderData={arr}/>
+            <p className={styles.subtitle}>Наше сообщество становится сильнее с каждым днем. Пожалуйста, следите за нашими социальными платформами,
+                чтобы получать самую актуальную и точную информацию о MMT.</p>
+            <img className={styles.rezak} src={rezak} alt=""/>
         </div>
     );
 };

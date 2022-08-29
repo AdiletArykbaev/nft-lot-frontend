@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import timeMonkey from "../../../assets/icons/timeMonkey.png";
 import telegram from "../../../assets/icons/telegram.png";
-import rezak from "../../../assets/icons/rezak.svg";
+import rezak from "../../../assets/icons/rezak.png";
 import Info from "../../Moleculas/Info/Info";
 import MediaLink from "../../Atoms/MediaLink";
 
@@ -37,8 +37,8 @@ const Intro = () => {
                     </div>
                     <div className={styles.seconPart}>
                         <img src={timeMonkey} alt=""/>
-                        <img src={rezak} alt=""/>
                     </div>
+                    <img className={styles.rezak} src={rezak} alt=""/>
                 </div>
             </div>
             <Info/>
