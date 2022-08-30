@@ -6,17 +6,20 @@ import Main from "./Pages/MainPage";
 import Footer from "./Components/Moleculas/Footer";
 import Lottery from "./Pages/Lottery";
 import { useSelector, useDispatch } from "react-redux";
+import ethers from "ethers";
 
 function App() {
   const location = useLocation();
-  const state = useSelector(state=>state);
+  const state = useSelector((state) => state.walletInfo);
   useEffect(() => {
     window.scrollTo({
       behavior: "smooth",
       top: "0",
     });
   }, [location.pathname]);
-  console.log("adilet state tut", state);
+  useEffect(() => {
+    
+  }, [state]);
   return (
     <div className="App">
       <Header />

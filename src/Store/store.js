@@ -1,6 +1,6 @@
 import { createStore } from "redux";
 import { combineReducers } from "redux";
 import MainState from "./Reducers/MainPageReducer";
-
-const reducers = combineReducers({MainState});
+import UserReducer from "./Reducers/UserReducer";
+const reducers = combineReducers({ MainState, walletInfo: UserReducer });
 export const store = createStore(reducers);
