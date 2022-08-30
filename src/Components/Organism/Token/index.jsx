@@ -2,6 +2,7 @@ import React from "react";
 import {Chart as ChartJS, ArcElement, Tooltip, Legend} from "chart.js";
 import {Pie} from "react-chartjs-2";
 import styles from "./styles.module.scss";
+import rezak from "../../../assets/icons/rezak.png";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -29,7 +30,9 @@ const Token = () => {
                 <div className={styles.char}>
                     <Pie data={data}/>
                 </div>
+                <img className={styles.rezak2} src={rezak} alt=""/>
             </div>
+            <img className={styles.rezak} src={rezak} alt=""/>
         </div>
     );
 };

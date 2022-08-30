@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './faq.module.scss';
 import Accordion from "../../Atoms/Accordion";
+import rezak from "../../../assets/icons/rezak.png";
 
 const Faq = () => {
 
@@ -36,6 +37,7 @@ const Faq = () => {
             <h2 className={styles.title}>FAQ</h2>
             <div className={styles.box}>
                 <Accordion accordionData={accordionData}/>
+                <img className={styles.rezak} src={rezak} alt=""/>
             </div>
         </div>
     );

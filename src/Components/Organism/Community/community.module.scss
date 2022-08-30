@@ -2,6 +2,15 @@
   margin: 7% 0 0;
 }
 
+.rezak {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(25%, 50%);
+  width: 10%;
+}
+
 .title {
   font-family: 'Evolventa', sans-serif;
   font-style: normal;

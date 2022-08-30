@@ -16,4 +16,13 @@
 .box {
   width: 60%;
   margin: 0 auto;
+  position: relative;
+}
+
+.rezak {
+  position: absolute;
+  right: -10%;
+  bottom: 0;
+  transform: translate(100%, 30%) rotate(-60deg);
+  width: 15%;
 }

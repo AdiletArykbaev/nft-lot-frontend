@@ -3,6 +3,7 @@ import styles from './join.module.scss';
 import MediaLink from "../../Atoms/MediaLink";
 import telegram from "../../../assets/icons/telegram.png";
 import discord from "../../../assets/icons/discord.png";
+import rezak from "../../../assets/icons/rezakBig.png";
 
 const Join = () => {
 
@@ -21,6 +22,8 @@ const Join = () => {
                     <MediaLink mediaData={mediaLinks}/>
                 </div>
             </div>
+            <img className={styles.rezak} src={rezak} alt=""/>
+            <img className={styles.rezak2} src={rezak} alt=""/>
         </div>
     );
 };

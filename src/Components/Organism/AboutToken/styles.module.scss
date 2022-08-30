@@ -60,11 +60,10 @@
 
   &::before {
     z-index: -1;
-    content: "";
+    content: url("../../../assets/icons/before.svg");
     position: absolute;
     width: 83px;
     height: 83px;
-    background-image: url("../../../assets/icons/before.svg");
     left: -35px;
     top: 50%;
     transform: translate(-100%, -50%);

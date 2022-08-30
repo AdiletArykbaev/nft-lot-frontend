@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './community.module.scss';
 import Address from "../../Atoms/Address";
+import rezak from "../../../assets/icons/rezak.png";
 
 const Community = () => {
     return (
@@ -11,6 +12,7 @@ const Community = () => {
                     здесь </p>
                 <Address address={"w34235243899854"} inputId={"copyAddress"}/>
                 <p className={styles.thanks}>Cпасибо вам за вашу поддержку!</p>
+                <img className={styles.rezak} src={rezak} alt=""/>
             </div>
         </div>
     );

@@ -1,5 +1,6 @@
 .wrapper {
-  padding: 12% 0 3%;
+  padding: 9% 0 6%;
+  overflow: hidden;
 }
 
 .title {
@@ -18,9 +19,25 @@ p {
 .content {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  align-items: center;
 }
 
 .mediaBox {
   display: flex;
   margin: 6.5% 0 0;
+}
+
+.seconPart {
+  width: 50%;
+  img {
+    width: 80%;
+  }
+}
+
+.rezak {
+  position: absolute;
+  right: 1%;
+  bottom: -5%;
+  transform: rotate(-180deg);
 }

@@ -3,17 +3,24 @@ import logo from "../../../assets/icons/logo.png";
 import styles from "./styles.module.scss";
 import Rectangle from "../../Atoms/Rectangle";
 import msg from "../../../assets/icons/msg.svg";
+import about2 from "../../../assets/icons/about2.svg";
+import about3 from "../../../assets/icons/about3.svg";
+import about4 from "../../../assets/icons/about4.svg";
+import btcAbout1 from "../../../assets/icons/btcAbout1.png";
+import btcAbout2 from "../../../assets/icons/btcAbout2.png";
+import btcAbout3 from "../../../assets/icons/btcAbout3.png";
+import btcAbout4 from "../../../assets/icons/btcAbout4.png";
+import btcAbout5 from "../../../assets/icons/btcAbout5.png";
+import rezak from "../../../assets/icons/rezak.png";
 
 const AboutUs = () => {
     const infoBlock = [
-        {
-            img: msg,
-            text: "быстрее и проще раскрепощаться в отношениях",
-        },
-        {img: msg, text: "стать живее и артистичнее"},
-        {img: msg, text: "научиться легкости  и переключаемости"},
-        {img: msg, text: "не упускать подходящие шансы"},
+        {img: msg, text: "быстрее и проще раскрепощаться в отношениях",},
+        {img: about2, text: "стать живее и артистичнее"},
+        {img: about3, text: "научиться легкости  и переключаемости"},
+        {img: about4, text: "не упускать подходящие шансы"},
     ];
+
     return (
         <div className={styles.content}>
             <div className={styles.intro}>
@@ -38,6 +45,11 @@ const AboutUs = () => {
                     Мармозетка прыгает по спинам собак, взбираясь на макушку
                     CoinMarketCap.
                 </p>
+                <img className={styles.btcPos1} src={btcAbout1} alt="btc"/>
+                <img className={styles.btcPos2} src={btcAbout2} alt="btc"/>
+                <img className={styles.btcPos3} src={btcAbout3} alt="btc"/>
+                <img className={styles.btcPos4} src={btcAbout4} alt="btc"/>
+                <img className={styles.btcPos5} src={btcAbout5} alt="btc"/>
             </div>
             <h4 className={styles.text}>
                 И наконец, каждый из Вас может использовать тотем Мармозетки в
@@ -48,6 +60,7 @@ const AboutUs = () => {
                 {infoBlock.map((item) => (
                     <Rectangle img={item.img} text={item.text}/>
                 ))}
+                <img className={styles.rezak} src={rezak} alt=""/>
             </div>
         </div>
     );

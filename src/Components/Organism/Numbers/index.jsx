@@ -14,7 +14,7 @@ const Numbers = () => {
                     <a className={styles.link} href={"www.binance.com"}>www.binance.com</a>
                 </div>
                 <div className={styles.box}>
-                    {arr.map(el => <NumberCard number={el}/>)}
+                    {arr.map(el => <NumberCard type={true} number={el}/>)}
                 </div>
                 <p className={styles.time}>Следующая цифра будет известна через: <span>1:43 сек.</span></p>
             </div>
@@ -31,7 +31,7 @@ const Numbers = () => {
                         <button className={styles.transparentBtn}>Запомнить мой выбор</button>
                         <button className={styles.transparentBtn}>Сгенерировать все доступные</button>
                     </div>
-                    <button className={styles.resetBtn}>Сбросить </button>
+                    <button className={styles.resetBtn}>Сбросить</button>
                 </div>
             </div>
         </section>

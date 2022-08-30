@@ -1,25 +1,36 @@
 .wrapper {
   box-sizing: border-box;
-  width: 95%;
-  height: 165.15px;
+  position: relative;
+  transform: rotate(-5deg);
+  z-index: 2;
+  margin: 10% 0 0;
+  padding: 3% 0;
 
-  background: linear-gradient(
-    253.09deg,
-    rgba(217, 217, 217, 0.25) -7.53%,
-    rgba(217, 217, 217, 0) 97.04%
-  );
-  /* Note: backdrop-filter has minimal browser support */
-  padding: 5%;
-  margin-top: 10%;
-  transform: matrix(-1, 0.05, 0.05, 1, 0, 0);
+  &:after {
+    z-index: -1;
+    content: '';
+    width: 130%;
+    height: 100%;
+    backdrop-filter: blur(50px);
+    background: linear-gradient(253.09deg, rgba(217, 217, 217, 0.25) -7.53%, rgba(217, 217, 217, 0) 97.04%);
+    transform: rotate(-180deg) translate(50%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
 }
+
 .content {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
   div {
-    margin-left: 50px;
-    transform: matrix(-1, 0.05, 0.05, 1, 0, 0);
-    img {
-      transform: none;
-    }
+    width: 15%;
+  }
+
+  img {
+    width: 100%;
   }
 }
