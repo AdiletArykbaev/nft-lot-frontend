@@ -7,6 +7,7 @@ import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
 import { ethers, providers } from "ethers";
 import { useDispatch } from "react-redux";
 import { changeDataActionCreator } from "../../../Store/Reducers/UserReducer";
+import { connectToToken } from "../../../Web3/interact";
 
 const WalletBtn = ({ balance }) => {
   const [web3Modal, setWeb3Modal] = useState(null);
@@ -17,10 +18,7 @@ const WalletBtn = ({ balance }) => {
     const provider = await web3Modal.connect();
     const ethersProvider = new providers.Web3Provider(provider);
     const userAddress = await ethersProvider.getSigner().getAddress();
-    const hex = await ethersProvider.getSigner().getBalance();
-    const balance = ethers.utils.formatEther(hex._hex);
-    dispatch(changeDataActionCreator(balance));
-    console.log("my web3 modal", ethersProvider);
+    return userAddress;
   }
   useEffect(() => {
     const providerOptions = {
@@ -54,7 +52,11 @@ const WalletBtn = ({ balance }) => {
     <button
       className={styles.wrapper}
       onClick={() => {
-        connectWallet();
+        const address = connectWallet();
+        const token = connectToToken(address);
+
+        const balance = token.balanceOf(address);
+        dispatch(changeDataActionCreator(balance));
       }}
     >
       <div className={styles.firstpart}>
