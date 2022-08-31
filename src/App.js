@@ -6,7 +6,6 @@ import Main from "./Pages/MainPage";
 import Footer from "./Components/Moleculas/Footer";
 import Lottery from "./Pages/Lottery";
 import { useSelector, useDispatch } from "react-redux";
-import ethers from "ethers";
 
 function App() {
   const location = useLocation();
@@ -18,7 +17,7 @@ function App() {
     });
   }, [location.pathname]);
   useEffect(() => {
-    
+    console.log("state tut", state);
   }, [state]);
   return (
     <div className="App">
