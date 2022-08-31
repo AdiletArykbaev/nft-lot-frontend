@@ -11,7 +11,9 @@ const Join = () => {
 
     return (
         <div className={styles.wrapper}>
-            <h2 className={styles.title}>ПРИСОЕДИНЯЙТЕСЬ К НАШЕМУ СООБЩЕСТВУ</h2>
+            <div className={styles.titleBox}>
+                <h2 className={styles.title}>ПРИСОЕДИНЯЙТЕСЬ К НАШЕМУ СООБЩЕСТВУ</h2>
+            </div>
             <div className={styles.content}>
                 <p className={styles.text + " " + styles.textFirst}>Активное сообщество, которое любит нашу маленькую
                     Мармозетку!</p>

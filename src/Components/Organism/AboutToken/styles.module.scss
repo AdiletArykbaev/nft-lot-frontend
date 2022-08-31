@@ -60,13 +60,13 @@
 
   &::before {
     z-index: -1;
-    content: url("../../../assets/icons/before.svg");
+    content: url("../../../assets/icons/galka.png");
     position: absolute;
     width: 83px;
     height: 83px;
     left: -35px;
     top: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(-100%, -65%);
   }
 }
 

@@ -25,11 +25,14 @@ p {
 
 .mediaBox {
   display: flex;
+  align-items: center;
+  column-gap: 30px;
   margin: 6.5% 0 0;
 }
 
 .seconPart {
   width: 50%;
+
   img {
     width: 80%;
   }

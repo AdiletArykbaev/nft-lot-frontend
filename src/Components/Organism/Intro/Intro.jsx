@@ -2,13 +2,14 @@ import React from "react";
 import styles from "./styles.module.scss";
 import timeMonkey from "../../../assets/icons/timeMonkey.png";
 import telegram from "../../../assets/icons/telegram.png";
+import pancake from "../../../assets/icons/pancake.svg";
 import rezak from "../../../assets/icons/rezak.png";
 import Info from "../../Moleculas/Info/Info";
 import MediaLink from "../../Atoms/MediaLink";
 
 const Intro = () => {
 
-    const mediaLinks = [{icon: telegram, text: "Telegram"}];
+    const mediaLinks = [{icon: telegram, text: "Telegram"}, {icon: pancake, text: "PancakeSwap"}];
 
     return (
         <div className={styles.wrapper}>

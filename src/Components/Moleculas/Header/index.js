@@ -21,48 +21,36 @@ const Header = () => {
                     <nav className={styles.navigation}>
                         <Link
                             to="/"
-                            className={({isActive}) =>
-                                isActive ? styles.active : styles.link
-                            }
+                            className={styles.link}
                         >
                             Home
                         </Link>
                         <Link
-                            className={({isActive}) =>
-                                isActive ? styles.active : styles.link
-                            }
+                            className={styles.link}
                             to="/us"
                         >
                             About us
                         </Link>
                         <Link
-                            className={({isActive}) =>
-                                isActive ? styles.active : styles.link
-                            }
+                            className={styles.active}
                             to="/lottery"
                         >
                             Lottery
                         </Link>
                         <Link
-                            className={({isActive}) =>
-                                isActive ? styles.active : styles.link
-                            }
+                            className={styles.active}
                             to="/shop"
                         >
                             Shop MMT
                         </Link>
                         <Link
-                            className={({isActive}) =>
-                                isActive ? styles.active : styles.link
-                            }
+                            className={styles.link}
                             to="/paper"
                         >
                             White Paper
                         </Link>
                         <Link
-                            className={({isActive}) =>
-                                isActive ? styles.active : styles.link
-                            }
+                            className={styles.link}
                             to="/faq"
                         >
                             FAQ
