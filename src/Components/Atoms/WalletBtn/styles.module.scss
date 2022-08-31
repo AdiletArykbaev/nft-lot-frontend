@@ -1,32 +1,34 @@
 .wrapper {
   width: 233px;
   height: 40px;
-
-  /* Gray/20 */
-  margin-top: 3%;
-  margin-left: 5%;
   display: flex;
   background: #2c2d3a;
   border-radius: 100px;
-  padding: 0 5%;
-  /* Inside auto layout */
+  padding: 0 0 0 7%;
 }
+
 .text {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  margin-left: 2%;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #ffffff;
+  margin: 5% 0 0;
 }
+
 .firstpart {
   display: flex;
-  margin-top: -5%;
-  width: 60%;
-  padding: 2%;
+  align-items: center;
+  column-gap: 15px;
+
+  img {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
+
 .secondpart {
   background: #3b3c4e;
   border-radius: 100px;

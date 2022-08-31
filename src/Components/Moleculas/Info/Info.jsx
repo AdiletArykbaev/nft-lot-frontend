@@ -1,34 +1,24 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import image1 from "../../../assets/images/img-1.png";
-import image2 from "../../../assets/images/img-2.png";
-
-import image3 from "../../../assets/images/img-3.png";
-import image4 from "../../../assets/images/img-4.png";
-import image5 from "../../../assets/images/img-5.png";
+import bscScan from '../../../assets/icons/bscscan.svg';
+import cake from '../../../assets/icons/cakeLogo.svg';
+import coingecko from '../../../assets/icons/coinGecko.svg';
+import cmc from '../../../assets/icons/cmc.svg';
+import aW from '../../../assets/icons/aW.svg';
+import aAdex from '../../../assets/icons/aAdex.svg';
+import InfoIcons from "../../Atoms/InfoIcons";
 
 const Info = () => {
-  return (
-    <div className={styles.wrapper}>
-      <div className={styles.content}>
-        <div>
-          <img src={image1} alt="" />
+
+    const infoIcons = [bscScan, cake, coingecko, cmc, aW, aAdex];
+
+    return (
+        <div className={styles.wrapper}>
+            <div className={styles.content}>
+                <InfoIcons data={infoIcons}/>
+            </div>
         </div>
-        <div>
-          <img src={image2} alt="" />
-        </div>
-        <div>
-          <img src={image3} alt="" />
-        </div>
-        <div>
-          <img src={image4} alt="" />
-        </div>
-        <div>
-          <img src={image5} alt="" />
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Info;

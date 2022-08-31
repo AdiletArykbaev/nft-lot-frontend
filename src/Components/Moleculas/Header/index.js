@@ -7,16 +7,63 @@ import personIcon from "../../../assets/icons/user.svg";
 import { useDispatch, useSelector } from "react-redux";
 
 const Header = () => {
-  const balance = useSelector((state) => state.walletInfo);
-  const dispatch = useDispatch();
-  console.log("balance info", balance);
-  return (
-    <header className={styles.wrapper}>
-      <div className="wrapper">
-        <div className={styles.content}>
-          <div className={styles.logoBlock}>
-            <div>
-              <img src={logo} alt="logo" />
+    return (
+        <header className={styles.wrapper}>
+            <div className="wrapper">
+                <div className={styles.content}>
+                    <div className={styles.logoBlock}>
+                        <div>
+                            <img src={logo} alt="logo"/>
+                        </div>
+                        <h1>
+                            MARMOSET <br/> TOKEN
+                        </h1>
+                    </div>
+                    <nav className={styles.navigation}>
+                        <Link
+                            to="/"
+                            className={styles.link}
+                        >
+                            Home
+                        </Link>
+                        <Link
+                            className={styles.link}
+                            to="/us"
+                        >
+                            About us
+                        </Link>
+                        <Link
+                            className={styles.active}
+                            to="/lottery"
+                        >
+                            Lottery
+                        </Link>
+                        <Link
+                            className={styles.active}
+                            to="/shop"
+                        >
+                            Shop MMT
+                        </Link>
+                        <Link
+                            className={styles.link}
+                            to="/paper"
+                        >
+                            White Paper
+                        </Link>
+                        <Link
+                            className={styles.link}
+                            to="/faq"
+                        >
+                            FAQ
+                        </Link>
+                    </nav>
+                    <div className={styles.btns}>
+                        <img src={personIcon} alt="image icon"/>
+                        <WalletBtn balance={"0.000"}/>
+                        <li className={styles.changeLang}>RU</li>
+                    </div>
+                </div>
+
             </div>
             <h1>
               MARMOSET <br /> TOKEN
