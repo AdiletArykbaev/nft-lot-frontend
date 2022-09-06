@@ -1,25 +1,26 @@
+import { CHANGE_ADDRESS, CHANGE_BALANCE } from "../types";
 const initialState = {
   address: " adilet",
-  balance: "sign in to wallet",
+  balance: "wallet",
+  signer: "",
 };
-
-const GET_BALANCE = "GET_BALANCE";
 
 function UserReducer(state = initialState, action) {
   switch (action.type) {
-    case GET_BALANCE:
-      state.balance = action.balance;
-      return state;
-      break;
+    case CHANGE_ADDRESS:
+      return {
+        ...state,
+        address: action.address,
+        signer: action.signer,
+      };
+    case CHANGE_BALANCE:
+      return {
+        ...state,
+        balance: action.balance,
+      };
     default:
       return state;
   }
-}
-export function changeDataActionCreator(value) {
-  return {
-    type: GET_BALANCE,
-    balance: value,
-  };
 }
 
 export default UserReducer;

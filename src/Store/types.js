@@ -1,0 +1,3 @@
+export const CHANGE_ADDRESS = "CHANGE_ADDRESS";
+export const CHANGE_BALANCE = "CHANGE_BALANCE";
+export const CHANGE_DATA = "CHANGE_DATA ";

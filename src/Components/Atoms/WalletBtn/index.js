@@ -5,42 +5,37 @@ import Web3Modal from "web3modal";
 import { useRef, useEffect, useState } from "react";
 import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
 import { ethers, providers } from "ethers";
-import { useDispatch } from "react-redux";
-import { changeDataActionCreator } from "../../../Store/Reducers/UserReducer";
+import { useDispatch, useSelector } from "react-redux";
+import { changeDataActionCreator } from "../../../Store/actions/UserActions.js";
 import { connectToToken } from "../../../Web3/interact";
 
-const WalletBtn = ({ balance }) => {
+const WalletBtn = () => {
   const [web3Modal, setWeb3Modal] = useState(null);
-  const [address, setAddress] = useState("");
-
+  const { balance } = useSelector((state) => state.walletInfo);
   const dispatch = useDispatch();
   async function connectWallet() {
     const provider = await web3Modal.connect();
     const ethersProvider = new providers.Web3Provider(provider);
     const userAddress = await ethersProvider.getSigner().getAddress();
+    const signer = await ethersProvider.getSigner();
+    dispatch(changeDataActionCreator(userAddress, signer));
     return userAddress;
   }
   useEffect(() => {
     const providerOptions = {
-      // walletconnect: {
-      //   package: WalletConnectProvider,
-      //   options: {
-      //     infuraId: "0157349369244f93accda102cda7ba42",
-      //   },
-      // },
       walletlink: {
-        package: CoinbaseWalletSDK, // Required
+        package: CoinbaseWalletSDK,
         options: {
-          appName: "Web 3 Modal Demo", // Required
+          appName: "Web 3 Modal Demo",
           infuraId: {
             4: "https://rinkeby.infura.io/v3/0157349369244f93accda102cda7ba42",
-          }, // Required unless you provide a JSON RPC url; see `rpc` below
+          },
         },
       },
     };
 
     const newWeb3Modal = new Web3Modal({
-      cacheProvider: true, // very important
+      cacheProvider: true,
       network: "rinkeby",
       providerOptions,
     });
@@ -52,11 +47,7 @@ const WalletBtn = ({ balance }) => {
     <button
       className={styles.wrapper}
       onClick={() => {
-        const address = connectWallet();
-        const token = connectToToken(address);
-
-        const balance = token.balanceOf(address);
-        dispatch(changeDataActionCreator(balance));
+        connectWallet();
       }}
     >
       <div className={styles.firstpart}>
