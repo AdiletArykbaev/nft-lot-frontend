@@ -1,10 +1,20 @@
-import { CHANGE_DATA } from "../types";
+import { CHANGE_DATA, CHANGE_INDEX, CHANGE_WINNER_NUMBER } from "../types";
 
-export function changeDataActionCreator(winnerNumbers, myNumbers, date) {
+export function changeDataActionCreator(lotteries) {
   return {
     type: CHANGE_DATA,
-    winnerNumbers: winnerNumbers,
-    myNumbers: myNumbers,
-    date: date,
+    lotteries,
   };
 }
+export function changeIndexAction(index) {
+  return {
+    type: CHANGE_INDEX,
+    index: index,
+  };
+}
+export const changeWinnerNumberAction = (number) => {
+  return {
+    type: CHANGE_WINNER_NUMBER,
+    value: number,
+  };
+};

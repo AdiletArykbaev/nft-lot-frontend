@@ -17,23 +17,23 @@
 }
 
 .text {
-  font-family: 'Evolventa', sans-serif;
+  font-family: "Evolventa", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 133%;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
 }
 
 .link {
-  font-family: 'Evolventa', sans-serif;
+  font-family: "Evolventa", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 133%;
   text-align: right;
-  color: #0EB78C;
+  color: #0eb78c;
   text-decoration: none;
   margin: 0;
 }
@@ -48,77 +48,4 @@
   div {
     width: calc((100% / 6) - ((25px * 5) / 6));
   }
-}
-
-.time {
-  font-family: 'Evolventa', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 133%;
-  color: #FFFFFF;
-
-  span {
-    color: #0EB78C;
-  }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 5% 0 0;
-
-  button {
-    cursor: pointer;
-  }
-}
-
-.actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: calc(95% - ((100% / 6) - ((25px * 5) / 6)));
-
-  button {
-    padding: 9px 15px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #FFFFFF;
-  }
-}
-
-.buyBtn {
-  background: #0EB78C;
-  border: 1px solid #0EB78C;
-  border-radius: 8px;
-}
-
-.transparentBtn {
-  box-sizing: border-box;
-  background: transparent;
-  margin: 0;
-  border-radius: 8px;
-  border: 1px solid #0EB78C;
-}
-
-.resetBtn {
-  width: calc((100% / 6) - ((25px * 5) / 6));
-  background: #FF1791;
-  border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  font-feature-settings: 'pnum' on, 'lnum' on;
-  color: #FFFFFF;
-  padding: 9px 0;
-  border: 1px solid transparent;
 }

@@ -16,9 +16,7 @@ function App() {
       top: "0",
     });
   }, [location.pathname]);
-  useEffect(() => {
-    console.log("state tut", state);
-  }, [state]);
+  useEffect(() => {}, [state]);
   return (
     <div className="App">
       <Header />
