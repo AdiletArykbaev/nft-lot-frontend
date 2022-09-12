@@ -1,8 +1,15 @@
-import { CHANGE_DATA } from "../types";
+import { CHANGE_DATA, CHANGE_INDEX, CHANGE_WINNER_NUMBER, CHANGE_MY_NUMBER } from "../types";
 const initialState = {
-  winnerNumbers: " ",
-  myNumbers: "",
-  date: "",
+  index: 1,
+  lotteries: [
+    {
+      winnerNumbers: [1, 2, 3, 4, 5],
+      myNumbers: [1, 2, 3, 4, 5],
+      date: new Date(),
+    },
+  ],
+  myNumbers: [1, 2, 3, 4, 5, 6],
+  winnerNumbers: [1, 2, 3, 4, 5, 6],
 };
 
 function MainState(state = initialState, action) {
@@ -10,11 +17,24 @@ function MainState(state = initialState, action) {
     case CHANGE_DATA:
       return {
         ...state,
-        winnerNumbers: action.winnerNumbers,
-        myNumbers: action.myNumbers,
-        date: action.date,
+        lotteries: action.lotteries,
       };
-
+    case CHANGE_INDEX:
+      return {
+        ...state,
+        index: action.index,
+      };
+    case CHANGE_WINNER_NUMBER:
+      return {
+        ...state,
+        winnerNumbers: action.value,
+      };
+    case CHANGE_MY_NUMBER: {
+      return {
+        ...state,
+        myNumbers: action.value
+      }
+    }
     default:
       return state;
   }

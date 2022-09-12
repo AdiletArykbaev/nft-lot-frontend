@@ -9,16 +9,12 @@ import { useSelector, useDispatch } from "react-redux";
 
 function App() {
   const location = useLocation();
-  const state = useSelector((state) => state.walletInfo);
   useEffect(() => {
     window.scrollTo({
       behavior: "smooth",
       top: "0",
     });
   }, [location.pathname]);
-  useEffect(() => {
-    console.log("state tut", state);
-  }, [state]);
   return (
     <div className="App">
       <Header />

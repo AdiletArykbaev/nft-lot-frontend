@@ -6,13 +6,30 @@ import WalletBtn from "../../Atoms/WalletBtn";
 import personIcon from "../../../assets/icons/user.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { changeBalanceActionCreator } from "../../../Store/actions/UserActions.js";
+import { changeIndexAction } from "../../../Store/actions/LotteryPageActions.js";
+
 import { connectToSmart } from "../../../Web3/interact";
 import { ethers } from "ethers";
 import { useEffect } from "react";
 import TokenAbi from "../../../Contracts/token.json";
+import LotteryAbi from "../../../Contracts/Lottery.json";
 const Header = () => {
   const { address, signer } = useSelector((state) => state.walletInfo);
+  const index = useSelector((state) => state.lotteryInfo);
   const dispatch = useDispatch();
+  const lotteryConnect = async () => {
+    const lottery = await connectToSmart(
+      "0xdf66FC941600712af65D345A268c25a2888dA044",
+      LotteryAbi,
+      signer
+    );
+
+    const lotteryNumber = await lottery.currentLotteryNumber();
+    const res = parseInt(lotteryNumber, 16);
+    dispatch(changeIndexAction(res));
+    return lottery;
+  };
+
   useEffect(() => {
     const connectToToken = async () => {
       const token = await connectToSmart(
@@ -23,12 +40,12 @@ const Header = () => {
 
       const balance_hex = await token.functions.balanceOf(address);
       const balance_number = ethers.utils.formatUnits(balance_hex[0]._hex);
-      console.log("contract", token);
-      console.log("hex", balance_hex);
-      console.log("balance_number", balance_number);
+
       dispatch(changeBalanceActionCreator(balance_number));
     };
     connectToToken();
+    lotteryConnect();
+    console.log("index", index);
   }, [address]);
   return (
     <header className={styles.wrapper}>
@@ -100,7 +117,7 @@ const Header = () => {
           </nav>
           <div className={styles.btns}>
             <img src={personIcon} alt=" icon" />
-            <WalletBtn />
+            <WalletBtn onClick={() => {}} />
             <li className={styles.changeLang}>RU</li>
           </div>
         </div>
