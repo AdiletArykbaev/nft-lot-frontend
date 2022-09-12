@@ -49,3 +49,76 @@
     width: calc((100% / 6) - ((25px * 5) / 6));
   }
 }
+
+.time {
+  font-family: "Evolventa", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: #ffffff;
+
+  span {
+    color: #0eb78c;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5% 0 0;
+
+  button {
+    cursor: pointer;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(95% - ((100% / 6) - ((25px * 5) / 6)));
+
+  button {
+    padding: 9px 15px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #ffffff;
+  }
+}
+
+.buyBtn {
+  background: #0eb78c;
+  border: 1px solid #0eb78c;
+  border-radius: 8px;
+}
+
+.transparentBtn {
+  box-sizing: border-box;
+  background: transparent;
+  margin: 0;
+  border-radius: 8px;
+  border: 1px solid #0eb78c;
+}
+
+.resetBtn {
+  width: calc((100% / 6) - ((25px * 5) / 6));
+  background: #ff1791;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+  padding: 9px 0;
+  border: 1px solid transparent;
+}

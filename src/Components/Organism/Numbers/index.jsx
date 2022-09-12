@@ -6,7 +6,6 @@ import { connectToSmart } from "../../../Web3/interact";
 import LotteryAbi from "../../../Contracts/Lottery.json";
 import { formatArray } from "../../../Utils/FormatArray";
 import { changeWinnerNumberAction } from "../../../Store/actions/LotteryPageActions";
-import UserNumbers from "../UserNumbers/index";
 
 const Numbers = () => {
   const numbers = [1, 2, 3, 4, 5];
@@ -52,7 +51,28 @@ const Numbers = () => {
           Следующая цифра будет известна через: <span>1:43 сек.</span>
         </p>
       </div>
-      <UserNumbers/>
+      <div>
+        <div className={styles.top}>
+          <p className={styles.text}>Мой выбор:</p>
+        </div>
+        <div className={styles.box}>
+          {numbers.map((el) => (
+            <NumberCard number={el} />
+          ))}
+        </div>
+        <div className={styles.buttons}>
+          <div className={styles.actions}>
+            <button className={styles.buyBtn}>Купить билет $10</button>
+            <button className={styles.transparentBtn}>
+              Запомнить мой выбор
+            </button>
+            <button className={styles.transparentBtn}>
+              Сгенерировать все доступные
+            </button>
+          </div>
+          <button className={styles.resetBtn}>Сбросить</button>
+        </div>
+      </div>
     </section>
   );
 };
