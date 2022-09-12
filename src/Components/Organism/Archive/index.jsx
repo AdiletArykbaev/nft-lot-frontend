@@ -26,7 +26,7 @@ const Archive = () => {
     console.log("lottery smart", lottery);
     const archive = await lottery.functions.showLotteryInfo(
       "0xdf66FC941600712af65D345A268c25a2888dA044",
-      1
+      2
     );
     console.log("archive", archive);
     const res = {
