@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { connectToSmart } from "../../../Web3/interact";
 import LotteryAbi from "../../../Contracts/Lottery.json"
+import TokenAbi from "../../../Contracts/token.json"
+import bigInt from "big-integer";
 
 
 const UserNumbers = () => {
@@ -15,12 +17,19 @@ const UserNumbers = () => {
     console.log("мои номера изменились", myNumbers)
   }, [myNumbers])
   async function getTicket(numbers) {
-    const contract = await connectToSmart(
+    const lottery = await connectToSmart(
       "0xdf66FC941600712af65D345A268c25a2888dA044",
       LotteryAbi,
       signer
     );
-    const res = await contract.buyTicket(numbers)
+    const token = await connectToSmart(
+      "0xeFd5fa314D80310cb9600eDd21CB71f513F5E4F2",
+      TokenAbi,
+      signer
+    )
+    let value = bigInt(2 ** 256 - 1);
+    console.log(await token.approve("0xdf66FC941600712af65D345A268c25a2888dA044", value))
+    const res = await lottery.buyTicket(numbers)
     console.log(res)
   }
   return (

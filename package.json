@@ -14,6 +14,7 @@
     "@walletconnect/web3-provider": "^1.8.0",
     "@web3-react/core": "^6.1.9",
     "add": "^2.0.6",
+    "big-integer": "^1.6.51",
     "buffer": "^6.0.3",
     "chart.js": "^3.9.1",
     "ethers": "^5.7.0",
