@@ -1,6 +1,10 @@
 .wrapper {
-  padding: 9% 0 6%;
+  padding: 7% 0 6%;
   overflow: hidden;
+}
+
+.fisrtPart {
+  width: 52.6%;
 }
 
 .title {
@@ -10,10 +14,16 @@
   font-size: 31px;
   line-height: 133%;
   color: #0eb78c;
+  margin: 0 0 11px;
 }
 
-p {
-  color: #ffff;
+.text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 144%;
+  color: #FFFFFF;
 }
 
 .content {
@@ -36,11 +46,11 @@ p {
   }
 }
 
-.seconPart {
+.secondPart {
   width: 50%;
 
   img {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -49,4 +59,17 @@ p {
   right: 1%;
   bottom: -5%;
   transform: rotate(-180deg);
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 16px;
+
+    br {
+      display: none;
+    }
+  }
 }

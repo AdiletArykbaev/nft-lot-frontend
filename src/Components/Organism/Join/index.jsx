@@ -12,9 +12,9 @@ import rezak from "../../../assets/icons/rezakBig.png";
 
 const Join = () => {
 
-    const mediaLinks = [{icon: telegram, text: "Telegram"}, {icon: twitter, text: "Twitter"},
-        {icon: discord, text: "Discord"}, {icon: reddit, text: "Reddit"}, {icon: instagram, text: "Instagram"},
-        {icon: tikTok, text: "TikTok"}, {icon: youTube, text: "YouTube"}];
+    const mediaLinks = [{icon: telegram, text: "Telegram", link: "https://t.me/marmosettokenGlobal"}, {icon: twitter, text: "Twitter", link: "https://twitter.com/marmosettoken/"},
+        {icon: discord, text: "Discord", link: "https://discord.gg/cbzJVhbYDV"}, {icon: reddit, text: "Reddit", link: "https://www.reddit.com/r/marmosettoken_MMT/"}, {icon: instagram, text: "Instagram", link: "https://instagram.com/marmosettoken?igshid=YmMyMTA2M2Y="},
+        {icon: tikTok, text: "TikTok", link: "https://www.tiktok.com/@marmosettoken?_t=8VBGdCz8Ln0&_r=1"}, {icon: youTube, text: "YouTube", link: "https://youtube.com/channel/UC0v-DgyatplMegkJ9zR3PpA"}];
 
     return (
         <div className={styles.wrapper}>

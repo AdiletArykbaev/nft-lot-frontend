@@ -9,8 +9,8 @@ import MediaLink from "../../Atoms/MediaLink";
 
 const Intro = () => {
     const mediaLinks = [
-        {icon: telegram, text: "Telegram"},
-        {icon: pancake, text: "PancakeSwap"},
+        {icon: telegram, text: "Telegram", link: "https://t.me/marmosettokenGlobal"},
+        {icon: pancake, text: "PancakeSwap", link: "#"},
     ];
 
     return (
@@ -19,26 +19,22 @@ const Intro = () => {
                 <div className={styles.content}>
                     <div className={styles.fisrtPart}>
                         <h1 className={styles.title}>
-                            МАРМОЗЕТКА ДЕЦЕНТРАЛИЗОВАННЫЙ <br/> МЕМ-ТОКЕН ДЛЯ ПОКЛОННИКОВ{" "}
-                            <br/>
-                            СООБЩЕСТВА МЕМОВ
+                            МАРМОЗЕТКА ДЕЦЕНТРАЛИЗОВАННЫЙ МЕМ-ТОКЕН ДЛЯ ПОКЛОННИКОВ СООБЩЕСТВА МЕМОВ
                         </h1>
                         <p className={styles.text}>
-                            Мармозетка хочет создать новое веселое сообщество, чтобы <br/>
+                            Мармозетка хочет создать новое веселое сообщество, чтобы
                             распространять информацию о удивительной, самой маленькой в мире
-                            <br/>
-                            обезьянке и добраться до макушки CoinMarketCap. <br/>
+                            обезьянке и добраться до макушки CoinMarketCap.
                         </p>
-                        <p>
-                            Ты скучал по Шибе, Доги, Флоки? Все в порядке! Мармозетка даст Вам{" "}
-                            <br/>
+                        <p className={styles.text}>
+                            Ты скучал по Шибе, Доги, Флоки? Все в порядке! Мармозетка даст Вам
                             еще один шанс!
                         </p>
                         <div className={styles.mediaBox}>
                             <MediaLink mediaData={mediaLinks}/>
                         </div>
                     </div>
-                    <div className={styles.seconPart}>
+                    <div className={styles.secondPart}>
                         <img src={timeMonkey} alt=""/>
                     </div>
                     <img className={styles.rezak} src={rezak} alt=""/>

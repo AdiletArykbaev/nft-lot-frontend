@@ -10,7 +10,9 @@ const Community = () => {
             <div className={styles.donate}>
                 <p className={styles.text}>Если вы хотите пожертвовать на развитие, отправьте BNB, BUSD, USDT, MMT
                     здесь </p>
-                <Address address={"w34235243899854"} inputId={"copyAddress"}/>
+                <div className={styles.address}>
+                    <Address address={"w34235243899854"} inputId={"copyAddress"}/>
+                </div>
                 <p className={styles.thanks}>Cпасибо вам за вашу поддержку!</p>
                 <img className={styles.rezak} src={rezak} alt=""/>
             </div>
