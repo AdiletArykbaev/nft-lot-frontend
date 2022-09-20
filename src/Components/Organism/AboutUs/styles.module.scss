@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .title {
@@ -34,15 +35,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(-45%, -45%);
+    transform: translate(-55%, -65%);
   }
 
   .btcPos2 {
-    z-index: -2;
+    z-index: 1;
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translate(-70%, 25%);
+    transform: translate(-60%, 45%);
   }
 
   .btcPos3 {
@@ -50,7 +51,7 @@
     position: absolute;
     top: 0;
     left: 87%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -85%);
   }
 
   .btcPos4 {
@@ -58,7 +59,7 @@
     position: absolute;
     top: 40%;
     left: 100%;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -50%);
   }
 
   .btcPos5 {
@@ -66,7 +67,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: translate(40%, 40%);
+    transform: translate(25%, 40%);
   }
 
   &::before {
@@ -141,4 +142,147 @@
   left: -1%;
   top: 0;
   transform: translate(-100%, -10%);
+}
+
+
+@media (max-width: 1200px) {
+  .intro {
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .title {
+    font-size: 36px;
+  }
+  .textTable {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .btcPos1 {
+    width: 25%;
+  }
+
+  .btcPos2 {
+    width: 30%;
+  }
+
+  .btcPos3 {
+    width: 30%;
+  }
+
+  .btcPos4 {
+    width: 35%;
+  }
+
+  .btcPos5 {
+    width: 15%;
+  }
+  .rezak {
+    width: 20%;
+    left: -2%;
+  }
+}
+
+@media (max-width: 996px) {
+  .title {
+    font-size: 34px;
+  }
+  .textTable {
+    width: 90%;
+  }
+  .walletsBlock {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin: 5% auto;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .textTable {
+    width: auto;
+    margin: 0 0 65px;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .text {
+    margin: 0 0 35px;
+
+    br {
+      display: none;
+    }
+  }
+  .walletsBlock {
+    width: auto;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  .rezak {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .textTable {
+    p {
+      font-size: 15px;
+    }
+
+    .btcPos1 {
+      transform: translate(-50%, -50%);
+    }
+  }
+  .intro {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .title {
+    font-size: 26px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .textTable {
+    p {
+      font-size: 14px;
+    }
+  }
+  .intro {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .title {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .walletsBlock {
+    row-gap: 30px;
+  }
 }

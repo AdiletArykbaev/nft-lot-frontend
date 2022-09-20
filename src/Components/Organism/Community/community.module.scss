@@ -11,6 +11,13 @@
   width: 10%;
 }
 
+.address {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 .title {
   font-family: 'Evolventa', sans-serif;
   font-style: normal;
@@ -65,4 +72,66 @@
   color: #FFFFFF;
   text-align: center;
   margin: 40px 0 0;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 36px;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .address {
+    width: 60%;
+  }
+  .thanks {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 996px) {
+  .title {
+    font-size: 34px;
+  }
+  .address {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+  .address {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 26px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .thanks {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .thanks {
+    font-size: 14px;
+  }
+  .address {
+    div {
+      width: 95%;
+    }
+  }
 }

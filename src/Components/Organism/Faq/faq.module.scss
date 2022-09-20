@@ -1,5 +1,6 @@
 .wrapper {
   margin: 7% 0;
+  overflow: hidden;
 }
 
 .title {
@@ -25,4 +26,73 @@
   bottom: 0;
   transform: translate(100%, 30%) rotate(-60deg);
   width: 15%;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 36px;
+  }
+  .box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 996px) {
+  .title {
+    font-size: 34px;
+  }
+  .box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+  .box {
+    width: 90%;
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 26px;
+  }
+  .box {
+    width: 95%;
+
+    h3 {
+      font-size: 17px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: 24px;
+  }
+  .box {
+    width: 95%;
+
+    h3 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
 }

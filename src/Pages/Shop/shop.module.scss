@@ -1,0 +1,34 @@
+.shop {
+  padding: 20px 0 0 0;
+  overflow: hidden;
+}
+
+.video {
+  position: relative;
+  overflow: hidden;
+
+  video {
+    width: 100%;
+  }
+}
+
+.box {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.description {
+  font-family: 'Evolventa', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 135.5%;
+  color: #FFFFFF;
+  margin: 25px 0 10px;
+}
+
+.rezak {
+  position: absolute;
+  transform: scale(-1) rotate(125deg);
+}

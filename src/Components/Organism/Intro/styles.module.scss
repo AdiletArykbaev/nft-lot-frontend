@@ -1,6 +1,10 @@
 .wrapper {
-  padding: 9% 0 6%;
+  padding: 7% 0 6%;
   overflow: hidden;
+}
+
+.fisrtPart {
+  width: 52.6%;
 }
 
 .title {
@@ -10,10 +14,16 @@
   font-size: 31px;
   line-height: 133%;
   color: #0eb78c;
+  margin: 0 0 11px;
 }
 
-p {
-  color: #ffff;
+.text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 144%;
+  color: #FFFFFF;
 }
 
 .content {
@@ -25,16 +35,22 @@ p {
 
 .mediaBox {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   column-gap: 30px;
   margin: 6.5% 0 0;
+  width: 35%;
+
+  p {
+    width: calc(100% / 2 - 20px);
+  }
 }
 
-.seconPart {
+.secondPart {
   width: 50%;
 
   img {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -43,4 +59,97 @@ p {
   right: 1%;
   bottom: -5%;
   transform: rotate(-180deg);
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 24px;
+  }
+  .fisrtPart {
+    width: 60%;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .rezak {
+    width: 15%;
+  }
+  .mediaBox {
+
+    a {
+      width: 110px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    div {
+      column-gap: 20px;
+    }
+
+    p {
+      margin: 5px 0 0;
+      width: 110px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .title {
+    text-align: center;
+    margin: 0 0 40px;
+  }
+  .text {
+    text-align: center;
+    margin: 20px 0 0;
+  }
+  .firstText {
+    margin: 30px 0 0;
+    position: relative;
+    padding: 0 0 20px;
+
+    &::after {
+      z-index: 10;
+      content: '';
+      width: 50%;
+      height: 1px;
+      background: #0EB78C;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  .secondText {
+    width: 80%;
+  }
+  .secondPart {
+    position: relative;
+
+    .rezak {
+      bottom: -5%;
+      left: 5%;
+      width: 30%;
+      transform: rotate(50deg) scaleY(-1);
+    }
+
+    .rezak2 {
+      position: absolute;
+      bottom: -5%;
+      right: 10%;
+      width: 30%;
+      transform: rotate(-230deg);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .text {
+    font-size: 15px;
+  }
 }

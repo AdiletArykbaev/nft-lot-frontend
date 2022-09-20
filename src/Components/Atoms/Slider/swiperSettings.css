@@ -43,3 +43,11 @@
     transform: translate(100%, -50%);
     right: calc(50% - 18px);
 }
+
+@media (max-width: 996px) {
+    .swiper_parent .swiper-button-prev, .swiper_parent .swiper-button-next {
+        width: 45px;
+        height: 45px;
+        bottom: -15px;
+    }
+}
