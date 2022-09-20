@@ -7,7 +7,7 @@ import btc3 from '../../../assets/icons/btc3.svg';
 const Banner = ({onChange}) => {
     return (
         <section className={styles.wrapper}>
-            <h1 className={styles.text}>Джекпот: $100, 000</h1>
+            <h1 className={styles.text}>Джекпот: <span>$100, 000</span></h1>
             <button onClick={() => onChange(true)} className={styles.button}>
                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path

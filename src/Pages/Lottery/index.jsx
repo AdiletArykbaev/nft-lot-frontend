@@ -61,7 +61,10 @@ const Lottery = () => {
             {modal && <Rules onChange={showModalHandler}/>}
             <Banner onChange={showModalHandler}/>
             <Numbers/>
-            <Archive index/>
+            <div className={styles.table}>
+                <Archive index/>
+            </div>
+
         </div>
     );
 };
