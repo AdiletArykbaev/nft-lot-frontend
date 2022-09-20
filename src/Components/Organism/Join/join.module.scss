@@ -71,8 +71,13 @@
 
 .mediaBox {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  column-gap: 60px;
-  margin: 4% 0 0;
+  margin: 4% auto 0;
+  width: 70%;
+
+  p {
+    width: calc(100% / 7 - 30px);
+  }
 }

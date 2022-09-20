@@ -1,10 +1,21 @@
 .wrapper {
-  width: 233px;
-  height: 40px;
+  //width: 233px;
+  //height: 40px;
   display: flex;
-  background: #2c2d3a;
-  border-radius: 100px;
-  padding: 0 0 0 7%;
+  align-items: center;
+  //background: #2c2d3a;
+  //border-radius: 100px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFFFFF;
+  background: #FF1791;
+  border-radius: 87px;
+  white-space: nowrap;
+  column-gap: 10px;
+  padding: 8px 18px;
 }
 
 .text {

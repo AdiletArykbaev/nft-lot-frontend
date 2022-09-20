@@ -116,7 +116,6 @@ const Header = () => {
             </Link>
           </nav>
           <div className={styles.btns}>
-            <img src={personIcon} alt=" icon" />
             <WalletBtn onClick={() => {}} />
             <li className={styles.changeLang}>RU</li>
           </div>

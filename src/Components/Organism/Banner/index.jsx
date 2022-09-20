@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './banner.module.scss';
-import btc1 from '../../../assets/icons/btc1.png';
-import btc2 from '../../../assets/icons/btc2.png';
-import btc3 from '../../../assets/icons/btc3.png';
+import btc1 from '../../../assets/icons/btc1.svg';
+import btc2 from '../../../assets/icons/btc2.svg';
+import btc3 from '../../../assets/icons/btc3.svg';
 
 const Banner = ({onChange}) => {
     return (

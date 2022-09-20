@@ -1,7 +1,7 @@
 import { CHANGE_ADDRESS, CHANGE_BALANCE } from "../types";
 const initialState = {
   address: " adilet",
-  balance: "wallet",
+  balance: "Connect wallet",
   signer: "",
 };
 

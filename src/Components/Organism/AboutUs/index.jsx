@@ -6,11 +6,11 @@ import msg from "../../../assets/icons/msg.svg";
 import about2 from "../../../assets/icons/about2.svg";
 import about3 from "../../../assets/icons/about3.svg";
 import about4 from "../../../assets/icons/about4.svg";
-import btcAbout1 from "../../../assets/icons/btcAbout1.png";
-import btcAbout2 from "../../../assets/icons/btcAbout2.png";
-import btcAbout3 from "../../../assets/icons/btcAbout3.png";
-import btcAbout4 from "../../../assets/icons/btcAbout4.png";
-import btcAbout5 from "../../../assets/icons/btcAbout5.png";
+import btcAbout1 from "../../../assets/icons/btcAbout1.svg";
+import btcAbout2 from "../../../assets/icons/btcAbout2.svg";
+import btcAbout3 from "../../../assets/icons/btcAbout3.svg";
+import btcAbout4 from "../../../assets/icons/btcAbout4.svg";
+import btcAbout5 from "../../../assets/icons/btcAbout5.svg";
 import rezak from "../../../assets/icons/rezak.png";
 
 const AboutUs = () => {

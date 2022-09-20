@@ -4,12 +4,16 @@ import styles from './media.link.module.scss';
 const MediaLink = ({mediaData}) => {
     return (
         <>
-            {mediaData && mediaData.map((el, idx) => (
-                <div key={el.text + idx} className={styles.box}>
+            <div className={styles.row}>
+                {mediaData && mediaData.map((el) => (
                     <img src={el.icon} alt="mediaLink"/>
+                ))}
+            </div>
+            <div className={styles.row}>
+                {mediaData && mediaData.map((el) => (
                     <p className={styles.text}>{el.text}</p>
-                </div>
-            ))}
+                ))}
+            </div>
         </>
     );
 };
