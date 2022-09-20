@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import logo from "../../../assets/icons/logo.png";
 import {NavLink as Link} from "react-router-dom";
 import WalletBtn from "../../Atoms/WalletBtn";
-import personIcon from "../../../assets/icons/user.svg";
+
 import {useDispatch, useSelector} from "react-redux";
 import {changeBalanceActionCreator} from "../../../Store/actions/UserActions.js";
 import {changeIndexAction} from "../../../Store/actions/LotteryPageActions.js";
@@ -13,6 +13,7 @@ import {ethers} from "ethers";
 import {useEffect} from "react";
 import TokenAbi from "../../../Contracts/token.json";
 import LotteryAbi from "../../../Contracts/Lottery.json";
+import Burger from "./BurgerMenu/Burger";
 
 const Header = () => {
     const {address, signer} = useSelector((state) => state.walletInfo);
@@ -38,10 +39,8 @@ const Header = () => {
                 TokenAbi,
                 signer
             );
-
             const balance_hex = await token.functions.balanceOf(address);
             const balance_number = ethers.utils.formatUnits(balance_hex[0]._hex);
-
             dispatch(changeBalanceActionCreator(balance_number));
         };
         connectToToken();
@@ -57,9 +56,7 @@ const Header = () => {
                             <img src={logo} alt="logo"/>
                         </div>
                         <h1>
-                            MARMOSET
-                            <br/>
-                            TOKEN
+                            MARMOSET <br/> TOKEN
                         </h1>
                     </div>
                     <nav className={styles.navigation}>
@@ -119,86 +116,15 @@ const Header = () => {
                         </Link>
                     </nav>
                     <div className={styles.btns}>
-                        <img src={personIcon} alt=" icon"/>
                         <WalletBtn onClick={() => {
                         }}/>
                         <li className={styles.changeLang}>RU</li>
                     </div>
+                    <Burger/>
                 </div>
             </div>
-<<<<<<< HEAD
         </header>
     );
-=======
-            <h1>
-              MARMOSET <br /> TOKEN
-            </h1>
-          </div>
-          <nav className={styles.navigation}>
-            <Link
-              to="/"
-              className={({ isActive }) =>
-                isActive ? styles.active : styles.link
-              }
-              key="6"
-            >
-              Home
-            </Link>
-            <Link
-              className={({ isActive }) =>
-                isActive ? styles.active : styles.link
-              }
-              to="/us"
-              key="5"
-            >
-              About us
-            </Link>
-            <Link
-              className={({ isActive }) =>
-                isActive ? styles.active : styles.link
-              }
-              to="/lottery"
-              key="4"
-            >
-              Lottery
-            </Link>
-            <Link
-              className={({ isActive }) =>
-                isActive ? styles.active : styles.link
-              }
-              to="/shop"
-              key="3"
-            >
-              Shop MMT
-            </Link>
-            <Link
-              className={({ isActive }) =>
-                isActive ? styles.active : styles.link
-              }
-              to="/paper"
-              key="2"
-            >
-              White Paper
-            </Link>
-            <Link
-              key="1"
-              className={({ isActive }) =>
-                isActive ? styles.active : styles.link
-              }
-              to="/faq"
-            >
-              FAQ
-            </Link>
-          </nav>
-          <div className={styles.btns}>
-            <WalletBtn onClick={() => {}} />
-            <li className={styles.changeLang}>RU</li>
-          </div>
-        </div>
-      </div>
-    </header>
-  );
->>>>>>> 2fa9be40ea54fdc4b06aabe50b2bed3f61842894
 };
 
 export default Header;
