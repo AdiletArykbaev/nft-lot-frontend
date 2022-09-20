@@ -15,7 +15,7 @@
 
 .logoBlock {
   display: flex;
-
+  align-items: center;
   div {
     img {
       width: 59px;
@@ -29,9 +29,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
-    line-height: 90%;
-    /* or 19px */
-
+    line-height: 120%;
     color: #ffffff;
   }
 }
