@@ -6,6 +6,7 @@ import Main from "./Pages/MainPage";
 import Footer from "./Components/Moleculas/Footer";
 import Lottery from "./Pages/Lottery";
 import Shop from "./Pages/Shop";
+import Admin from "./Pages/Admin";
 
 function App() {
     const location = useLocation();
@@ -22,6 +23,7 @@ function App() {
                 <Route element={<Main/>} path="/"/>
                 <Route element={<Lottery/>} path="/lottery"/>
                 <Route element={<Shop/>} path="/shop"/>
+                <Route element={<Admin/>} path="/admin"/>
             </Routes>
             <Footer/>
         </div>
