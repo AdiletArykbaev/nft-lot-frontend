@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(40%, 20%) rotate(-90deg);
+  transform: translate(40%, 20%) rotate(-90deg) scale(-1);
 }
 
 .rezak2 {
@@ -63,4 +63,25 @@
   font-size: 40px;
   line-height: 133%;
   color: #0eb78c;
+}
+
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 36px;
+  }
+  .rezak {
+    width: 15%;
+  }
+
+  .praphic {
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 996px) {
+  .title {
+    font-size: 34px;
+  }
 }

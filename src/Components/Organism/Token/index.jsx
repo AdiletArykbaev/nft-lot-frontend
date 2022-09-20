@@ -1,6 +1,5 @@
 import React from "react";
 import {Chart as ChartJS, ArcElement, Tooltip, Legend} from "chart.js";
-import {Pie} from "react-chartjs-2";
 import styles from "./styles.module.scss";
 import rezak from "../../../assets/icons/rezak.png";
 import graphic from '../../../assets/icons/graphic.svg';

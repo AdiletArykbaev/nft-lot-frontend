@@ -38,10 +38,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 144%;
-  /* or 26px */
-
   font-feature-settings: "pnum" on, "lnum" on;
-
   color: #ffffff;
 }
 
@@ -57,17 +54,9 @@
   color: #ffffff;
   margin: 0;
   position: relative;
-
-  &::before {
-    z-index: -1;
-    content: url("../../../assets/icons/galka.png");
-    position: absolute;
-    width: 83px;
-    height: 83px;
-    left: -35px;
-    top: 50%;
-    transform: translate(-100%, -65%);
-  }
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
 }
 
 .fisrtPart {
@@ -79,5 +68,34 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 110px;
+  row-gap: 30px;
+}
+
+@media (max-width: 1200px) {
+  .fisrtPart {
+    width: 50%;
+  }
+  .title {
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+  .secondPart {
+    width: 45%;
+  }
+  .item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 996px) {
+  .item {
+    font-size: 15px;
+    img {
+      width: 65px;
+      height: 65px;
+    }
+  }
 }

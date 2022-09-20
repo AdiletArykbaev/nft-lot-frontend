@@ -26,3 +26,21 @@
   transform: translate(100%, 30%) rotate(-60deg);
   width: 15%;
 }
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 36px;
+  }
+  .box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 996px) {
+  .title {
+    font-size: 34px;
+  }
+  .box {
+    width: 80%;
+  }
+}

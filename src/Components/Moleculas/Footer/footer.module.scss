@@ -47,3 +47,47 @@
   text-align: center;
   color: #C8C8C8;
 }
+
+@media (max-width: 1200px) {
+  .addressBox {
+    width: 90%;
+
+    input {
+      width: 65%;
+    }
+
+    div {
+      justify-content: flex-end;
+      column-gap: 50px;
+    }
+  }
+  .addressText {
+    white-space: nowrap;
+    font-size: 16px;
+  }
+
+  .thank {
+    font-size: 18px;
+
+    img {
+      width: 75px;
+      height: 75px;
+    }
+  }
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 996px) {
+  .addressBox {
+    width: 98%;
+
+    div {
+      column-gap: 20px;
+    }
+  }
+  .thank {
+    margin: 15px 0;
+  }
+}

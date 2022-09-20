@@ -81,3 +81,51 @@
     width: calc(100% / 7 - 20px);
   }
 }
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 18px;
+  }
+
+  .rezak, .rezak2 {
+    width: 20%;
+  }
+
+  .mediaBox {
+    width: 80%;
+
+    a {
+      width: 80px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    p {
+      width: 80px;
+    }
+  }
+}
+
+@media (max-width: 996px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .rezak, .rezak2 {
+    width: 13%;
+  }
+
+  .mediaBox {
+    width: 80%;
+
+    div {
+      column-gap: 10px;
+    }
+  }
+}

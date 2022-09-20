@@ -53,3 +53,14 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .address {
+    input {
+      font-size: 15px;
+    }
+    button {
+      font-size: 15px;
+    }
+  }
+}
