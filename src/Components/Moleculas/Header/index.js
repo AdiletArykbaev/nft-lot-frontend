@@ -126,8 +126,79 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
         </header>
     );
+=======
+            <h1>
+              MARMOSET <br /> TOKEN
+            </h1>
+          </div>
+          <nav className={styles.navigation}>
+            <Link
+              to="/"
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+              key="6"
+            >
+              Home
+            </Link>
+            <Link
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+              to="/us"
+              key="5"
+            >
+              About us
+            </Link>
+            <Link
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+              to="/lottery"
+              key="4"
+            >
+              Lottery
+            </Link>
+            <Link
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+              to="/shop"
+              key="3"
+            >
+              Shop MMT
+            </Link>
+            <Link
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+              to="/paper"
+              key="2"
+            >
+              White Paper
+            </Link>
+            <Link
+              key="1"
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+              to="/faq"
+            >
+              FAQ
+            </Link>
+          </nav>
+          <div className={styles.btns}>
+            <WalletBtn onClick={() => {}} />
+            <li className={styles.changeLang}>RU</li>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+>>>>>>> 2fa9be40ea54fdc4b06aabe50b2bed3f61842894
 };
 
 export default Header;
