@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './shop.module.scss';
-import Gif from '../../assets/gif/GIF_1920х10800001-0239.mp4';
+import Gif from '../../assets/gif/MainVideo.mp4';
 import ShopForm from "../../Components/Organism/ShopForm";
 import rezak from "../../assets/icons/rezak.png";
 
