@@ -50,3 +50,25 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: calc((100% / 2) - 30px);
+
+    h4 {
+      font-size: 14px;
+    }
+  }
+}
+
+
+@media (max-width: 425px) {
+  .wrapper {
+    width: calc((100% / 2) - 15px);
+
+    h4 {
+      font-size: 13px;
+    }
+  }
+}

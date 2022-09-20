@@ -8,7 +8,7 @@ const AboutToken = () => {
             <div className={styles.wrapper}>
                 <div className={styles.fisrtPart}>
                     <h1 className={styles.title}>
-                        Сертификация безопасност и охраны труда
+                        Сертификация безопасности и охраны труда
                     </h1>
                     <p className={styles.text}>
                         Проект Мармозеттокен предназначен для сообщества (у команды нет{" "}

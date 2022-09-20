@@ -21,7 +21,7 @@ export default function ControlledAccordions({accordionData}) {
                     <AccordionSummary sx={{borderBottom: "2px solid #363133", position: "relative"}}
                                       expandIcon={<ExpandMoreIcon/>} aria-controls={`panel${idx + 1}bh-content`}
                                       id={`panel${idx + 1}bh-header`}>
-                        <Typography sx={{
+                        <Typography component="h3" sx={{
                             color: "#0EB78C",
                             fontFamily: "Evolventa, sans-serif",
                             fontStyle: "normal",

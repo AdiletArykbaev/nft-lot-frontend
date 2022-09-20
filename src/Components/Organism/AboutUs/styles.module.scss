@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .title {
@@ -228,8 +229,60 @@
   }
   .walletsBlock {
     width: auto;
+    flex-wrap: wrap;
+    row-gap: 40px;
   }
   .rezak {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .textTable {
+    p {
+      font-size: 15px;
+    }
+
+    .btcPos1 {
+      transform: translate(-50%, -50%);
+    }
+  }
+  .intro {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .title {
+    font-size: 26px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .textTable {
+    p {
+      font-size: 14px;
+    }
+  }
+  .intro {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .title {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .walletsBlock {
+    row-gap: 30px;
   }
 }

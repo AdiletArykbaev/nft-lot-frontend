@@ -91,3 +91,79 @@
     margin: 15px 0;
   }
 }
+
+@media (max-width: 768px) {
+  .addressBox {
+    flex-direction: column;
+
+    div {
+      width: 100%;
+      column-gap: 10px;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .addressText {
+    width: auto;
+  }
+
+  .thank {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .addressBox {
+    div {
+      flex-direction: column;
+      row-gap: 20px;
+      column-gap: 10px;
+    }
+
+    input {
+      width: 80%;
+    }
+
+    button {
+      width: 80%;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  .thank {
+    margin: 10px 0;
+    font-size: 15px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  .addressBox {
+    div {
+      row-gap: 10px;
+    }
+    p {
+      font-size: 14px;
+    }
+
+    input {
+      width: 95%;
+    }
+
+    button {
+      width: 95%;
+    }
+  }
+
+  .thank {
+    font-size: 14px;
+  }
+}
