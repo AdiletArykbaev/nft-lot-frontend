@@ -6,7 +6,9 @@ const MediaLink = ({mediaData}) => {
         <>
             <div className={styles.row}>
                 {mediaData && mediaData.map((el) => (
-                    <img src={el.icon} alt="mediaLink"/>
+                    <a target="_blank" className={styles.link} href={el.link}>
+                        <img src={el.icon} alt="mediaLink"/>
+                    </a>
                 ))}
             </div>
             <div className={styles.row}>
