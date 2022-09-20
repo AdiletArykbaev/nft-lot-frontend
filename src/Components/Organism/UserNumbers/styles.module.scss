@@ -56,9 +56,10 @@
 .actions {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: calc(95% - ((100% / 6) - ((25px * 5) / 6)));
-
+  column-gap: 17px;
+  flex: auto;
+  flex-wrap: wrap;
+  row-gap: 10px;
   button {
     padding: 9px 15px;
     font-family: "Poppins", sans-serif;
@@ -87,7 +88,7 @@
 }
 
 .resetBtn {
-  width: calc((100% / 6) - ((25px * 5) / 6));
+  margin-left: 15px;
   background: #ff1791;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
@@ -98,7 +99,7 @@
   text-align: center;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #ffffff;
-  padding: 9px 0;
+  padding: 8px 21px;
   border: 1px solid transparent;
 }
 
@@ -131,7 +132,6 @@
   padding: 40px 0;
   display: flex;
   justify-content: center;
-
   input {
     border: none;
     background: none;
@@ -145,5 +145,47 @@
     color: #0EB78C;
     margin: 0;
     text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    column-gap: 10px;
+    div {
+      width: calc((100% / 6) - ((10px * 5) / 6));
+    }
+  }
+  .box {
+    column-gap: 10px;
+    padding: 0;
+    input {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 0;
+      font-size: 40px !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    column-gap: 5px;
+
+    div {
+      width: calc((100% / 6) - ((5px * 5) / 6));
+      border-radius: 10px;
+      input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 24px !important;
+      }
+    }
   }
 }
