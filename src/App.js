@@ -7,6 +7,7 @@ import Footer from "./Components/Moleculas/Footer";
 import Lottery from "./Pages/Lottery";
 import Shop from "./Pages/Shop";
 import Admin from "./Pages/Admin";
+import RequireAuth from "./Utils/RequireAuth";
 
 function App() {
     const location = useLocation();
@@ -23,7 +24,11 @@ function App() {
                 <Route element={<Main/>} path="/"/>
                 <Route element={<Lottery/>} path="/lottery"/>
                 <Route element={<Shop/>} path="/shop"/>
-                <Route element={<Admin/>} path="/admin"/>
+                <Route element={
+                    <RequireAuth>
+                        <Admin/>
+                    </RequireAuth>
+                } path="/admin"/>
             </Routes>
             <Footer/>
         </div>
